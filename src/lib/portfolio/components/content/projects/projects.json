@@ -1,6 +1,27 @@
 {
     "projects": [
         {
+            "name":"Portfolio",
+            "banner": "/portfolio/projects/portfolio_banner.png",
+            "description": "This portfolio works as a personal repository to record my progress. Recently I've noticed that some of my best personal projects were lost in time and now they live only in my memory, this is why I created this portfolio, to easily access, remember and share these projects and histories.",
+            "technologies": [
+                {
+                    "name": "svelte-kit",
+                    "useCase": "Aside of the ease of use and DX, there's no other reason to use SvelteKit here. I simply enjoy using it."
+                },
+                {
+                    "name": "photoshop",
+                    "useCase": "Used in the ideation and wireframing phase."
+                }
+            ],
+            "links": [
+                {
+                    "name": "vinicius.brito-costa.com/portfolio",
+                    "url": "https://www.vinicius.brito-costa.com/portfolio"
+                }
+            ]
+        },
+        {
             "name":"DAPI - Digimon API",
             "banner": "/portfolio/projects/digi_api_banner.png",
             "description": "DAPI is a static api that serves Digimon data. The conception of it started as a personal need, when I started studying software development the only thing I see around was the damn Pokedex and I wanted to do the same but with Digimon, sadly at the time there was nothing like PokeAPI for Digimon. Then I looked forward to how one could create something similar, and here it is.",

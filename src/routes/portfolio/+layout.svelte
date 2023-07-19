@@ -51,7 +51,6 @@
 <svelte:head>
 	<title>{data.head["tab-settings"]["tab-names"].base}</title>
     <link rel="icon" href={data.head.favicon} />
-    <meta name="robots" content="noindex nofollow" />
 </svelte:head>
 <div class="background">
     <div class="main-container">
