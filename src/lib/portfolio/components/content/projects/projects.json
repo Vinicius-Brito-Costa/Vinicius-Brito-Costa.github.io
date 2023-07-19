@@ -1,0 +1,69 @@
+{
+    "projects": [
+        {
+            "name":"DAPI - Digimon API",
+            "banner": "/portfolio/projects/digi_api_banner.png",
+            "description": "DAPI is a static api that serves Digimon data. The conception of it started as a personal need, when I started studying software development the only thing I see around was the damn Pokedex and I wanted to do the same but with Digimon, sadly at the time there was nothing like PokeAPI for Digimon. Then I looked forward to how one could create something similar, and here it is.",
+            "technologies": [
+                {
+                    "name": "svelte",
+                    "useCase": "The first version of DAPI was created in Svelte."
+                },
+                {
+                    "name": "svelte-kit",
+                    "useCase": "During the development of the project the needs for a more robust routing system appeared, so the next logical step was to test the framework based in Svelte. And I loved it."
+                },
+                {
+                    "name": "python",
+                    "useCase": "Used in the webscrapping process with the lib 'BeautifulSoup', it was my first time using python in a 'real' case."
+                }
+            ],
+            "links": [
+                {
+                    "name": "digi-api.com",
+                    "url": "https://www.digi-api.com/"
+                }
+            ]
+        },
+        {
+            "name":"ShootaGun",
+            "banner": "/portfolio/projects/shootagun_banner.png",
+            "description": "ShootaGun is a 2.5D shooter based on Viewpoint for NeoGeo CD. On your way to the military base you receive an emergency signal from one of the most famous weapon factory in the sector, on the help signal there’s only one thing written: Shadow Hands.\nThis project was the starting point of my journey with programming, it started as a simple question: How games are made? And when it was done and the game was up in Itch.io I had only one thing in mind: I need to work with code.",
+            "technologies": [
+                {
+                    "name": "unity",
+                    "useCase": "Engine used to create the game."
+                },
+                {
+                    "name": "c-sharp",
+                    "useCase": "Scripts used in Unity were created with C#"
+                },
+                {
+                    "name": "blender",
+                    "useCase": "Used to clean and retouch the models from Magica Voxel."
+                },
+                {
+                    "name": "magica-voxel",
+                    "useCase": "Used to create the 3d models and its textures."
+                },
+                {
+                    "name": "photoshop",
+                    "useCase": "Texture creation, some vfx assets, logo and instructions graphics."
+                }
+            ],
+            "links": [
+                {
+                    "name": "Itch.io",
+                    "url": "https://dracods.itch.io/shootagun"
+                },
+                {
+                    "name": "Github",
+                    "url": "https://github.com/Vinicius-Brito-Costa/ShootaGun"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "description": "Projects Information"
+    }
+}

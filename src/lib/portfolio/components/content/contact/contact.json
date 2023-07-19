@@ -1,0 +1,25 @@
+{
+    "contacts": [
+        {
+            "name": "E-Mail",
+            "title": "viniciusbc46@hotmail.com",
+            "type": "email",
+            "contact": "viniciusbc46@hotmail.com"
+        },
+        {
+            "name": "Github",
+            "title": "Vinicius-Brito-Costa",
+            "type": "url",
+            "contact": "https://github.com/Vinicius-Brito-Costa"
+        },
+        {
+            "name": "LinkedIn",
+            "title": "vinícius-brito-costa",
+            "type": "url",
+            "contact": "https://www.linkedin.com/in/vinícius-brito-costa/"
+        }
+    ],
+    "meta": {
+        "description": "Contact Information"
+    }
+}
