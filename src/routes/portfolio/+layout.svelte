@@ -29,14 +29,29 @@
         --title-size-h1-full: 40px;
         --title-size-h2-full: 30px;
         --title-size-h3-full: 20px;
-
+        
         --small-space: 15px;
         --medium-space: 25px;
         --large-space: 35px;
     }
     .background {
+        z-index: 2;
         width: 100%;
         height: 100%;
+    }
+    .noise-filter {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .1;
+        filter: contrast(150%) brightness(100%);
+        background: 
+            radial-gradient(circle at 50% 50%, rgba(0,0,0,1), rgba(255,255,255,0)),
+            url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+
     }
     .main-container {
         padding: var(--small-space);
@@ -64,3 +79,4 @@
         </div>
     </div>
 </div>
+<div class ="noise-filter"></div>
