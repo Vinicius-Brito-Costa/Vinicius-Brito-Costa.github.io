@@ -1,13 +1,12 @@
 <script>
-    export let setSelected, selectedLink
+    export let selectedLink
     import { page } from '$app/stores'
     import NavbarLink from './NavbarLink.svelte';
-
-    let hash = $page.url.hash
-    if (hash) {
-        setSelected(hash.substring(1))
+    function setSelected(link) {
+        selectedLink = link
     }
-    else {
+
+    if (!selectedLink){
         setSelected("about")
     }
 </script>

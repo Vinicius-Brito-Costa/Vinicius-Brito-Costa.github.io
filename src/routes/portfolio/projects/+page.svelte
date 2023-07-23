@@ -1,8 +1,5 @@
 <script>
   import Content from "$lib/portfolio/Content.svelte";
 </script>
-<style>
 
-</style>
-
-<Content selectedLink={"about"} />
+<Content selectedLink={"projects"} />

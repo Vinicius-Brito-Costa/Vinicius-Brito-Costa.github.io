@@ -24,5 +24,5 @@
     }
 </style>
 <li>
-    <a class="link info {selectedLink == name ? 'is-selected' : 'is-not-selected'}" href={"#" + name} on:click={() => setSelected(name)}>{selectedLink == name ? SELECTED_TEXT : ""}{name}()</a>
+    <a class="link info {selectedLink == name ? 'is-selected' : 'is-not-selected'}" href={"/portfolio/" + name} on:click={() => setSelected(name)}>{selectedLink == name ? SELECTED_TEXT : ""}{name}()</a>
 </li>

@@ -20,9 +20,6 @@
     }
 </script>
 <style>
-    article {
-
-    }
     .mask-wrapper {
         width: 550px;
         height: 600px;

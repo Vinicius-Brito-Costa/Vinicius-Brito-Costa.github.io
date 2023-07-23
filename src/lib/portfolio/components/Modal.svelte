@@ -1,5 +1,13 @@
 <script>
+    import {marked} from 'marked'
     export let project, open, activateModal
+
+    function parseMarkdown(md) {
+        marked.Renderer.prototype.paragraph = (text) => {
+            return text
+        }
+        return marked.parse(md.default, {gfm: true, mangle: false})
+    }
 </script>
 <style>
     .modal-close {
@@ -19,7 +27,7 @@
     }
     .modal-content {
         z-index: 2;
-        width: 700px;
+        width: 90%;
         height: 700px;
         border: 3px solid var(--main-color);
         font-family: var(--hack-font);
@@ -27,12 +35,6 @@
         display: flex;
         flex-direction: column;
         background-color: black;
-    }
-    .modal-content img {
-        width: 100%;
-        object-fit: cover;
-        object-position: top;
-        height: 200px;
     }
 
     .modal-title{
@@ -44,7 +46,7 @@
         align-self: center;
     }
     .modal-info {
-        height: 100%;
+        height: 680px;
         display: flex;
         flex-direction: column;
         margin: 10px;
@@ -60,11 +62,33 @@
     }
     .modal-description {
         overflow-y: scroll;
-        height: 150px;
         margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
     }
+    .modal-skill-container {
+        width: 100%;
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        padding: 5px 0;
+        border-top: 1px solid var(--main-color);
+        border-bottom: 1px solid var(--main-color);
+    }
+    :global(.video-player) {
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin: auto;
+    }
+    :global(.modal-description img) {
+        height: 200px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
     .footer {
-        margin-top: auto;
         align-content: end;
         align-self: flex-end;
     }
@@ -84,19 +108,22 @@
 </style>
 <div class="modal-container modal-{open ? "open" : "close"} ">
     <div class="modal-content">
-        <img src={project.banner} alt={project.name}/>
         <div class="modal-info">
             <div class="modal-title">
                 <h2>{project.name}</h2>
             </div>
             <div class="modal-description">
-                {#each project.description.split("\n") as paragraph}
-                <p>{paragraph}</p>
+                {#await import(`./content/projects/markdown/${project.markdown}.md?raw`)}
+                    Loading...
+                {:then md}
+                    {@html parseMarkdown(md)}
+                {/await}
+            </div>
+            <div class="modal-skill-container">
+                {#each project.technologies as tech}
+                    <span class="modal-skill"><span class="modal-skill-title">{tech.name + ": "}</span>{tech.useCase}</span>
                 {/each}
             </div>
-            {#each project.technologies as tech}
-                <span class="modal-skill"><span class="modal-skill-title">{tech.name + ": "}</span>{tech.useCase}</span>
-            {/each}
             <div class="footer">
                 {#each project.links as link, index}
                     <a href={link.url} alt={link.name} target="_blank">{link.name}</a> {project.links.length > 1 && (index + 1) < project.links.length ? " - " : ""}

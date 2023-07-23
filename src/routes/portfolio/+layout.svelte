@@ -1,8 +1,13 @@
 <script>
+    import Header from "$lib/portfolio/Header.svelte";
+    import Navbar from "$lib/portfolio/Navbar.svelte";
     import data from "$lib/portfolio/common.json"
+    import { page } from '$app/stores';
     import { dev } from '$app/environment';
     import { inject } from '@vercel/analytics';
     inject({ mode: dev ? 'development' : 'production' });
+
+    let selectedLink = $page.route.id.replace("/portfolio/", "")
 </script>
 <style>
     @font-face {
@@ -65,6 +70,25 @@
         padding: var(--small-space);
         height: calc(100% - 20px);
     }
+    .flexbox {
+        display: flex;
+        height: 100%;
+    }
+    .content {
+        width: 100%;
+    }
+    .content-info {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .terminal-start {
+        padding: 0px 30px 0px 10px;
+        margin: 0px;
+        font-family: var(--hack-font);
+        font-size: var(--title-size-h1-full);
+        color: var(--main-color);
+    }
 </style>
 <svelte:head>
 	<title>{data.head["tab-settings"]["tab-names"].base}</title>
@@ -74,7 +98,16 @@
     <div class="main-container">
         <div class="border-line green-border">
             <div class="spacer">
-                <slot></slot>
+                <main class="flexbox">
+                    <h1 class="title-size terminal-start">></h1>
+                    <div class="content">
+                        <Header />
+                        <div class="content-info">
+                            <Navbar selectedLink={selectedLink}/>
+                            <slot></slot>
+                        </div>
+                    </div>
+                </main>
             </div>
         </div>
     </div>

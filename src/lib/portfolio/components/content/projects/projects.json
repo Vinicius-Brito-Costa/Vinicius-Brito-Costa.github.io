@@ -3,7 +3,7 @@
         {
             "name":"Portfolio",
             "banner": "/portfolio/projects/portfolio_banner.png",
-            "description": "This portfolio works as a personal repository to record my progress. Recently I've noticed that some of my best personal projects were lost in time and now they live only in my memory, this is why I created this portfolio, to easily access, remember and share these projects and histories.",
+            "markdown": "portfolio",
             "technologies": [
                 {
                     "name": "svelte-kit",
@@ -24,7 +24,7 @@
         {
             "name":"DAPI - Digimon API",
             "banner": "/portfolio/projects/digi_api_banner.png",
-            "description": "DAPI is a static api that serves Digimon data. The conception of it started as a personal need, when I started studying software development the only thing I see around was the damn Pokedex and I wanted to do the same but with Digimon, sadly at the time there was nothing like PokeAPI for Digimon. Then I looked forward to how one could create something similar, and here it is.",
+            "markdown": "digimon_api",
             "technologies": [
                 {
                     "name": "svelte",
@@ -49,7 +49,7 @@
         {
             "name":"ShootaGun",
             "banner": "/portfolio/projects/shootagun_banner.png",
-            "description": "ShootaGun is a 2.5D shooter based on Viewpoint for NeoGeo CD. On your way to the military base you receive an emergency signal from one of the most famous weapon factory in the sector, on the help signal there’s only one thing written: Shadow Hands.\nThis project was the starting point of my journey with programming, it started as a simple question: How games are made? And when it was done and the game was up in Itch.io I had only one thing in mind: I need to work with code.",
+            "markdown": "shootagun",
             "technologies": [
                 {
                     "name": "unity",
