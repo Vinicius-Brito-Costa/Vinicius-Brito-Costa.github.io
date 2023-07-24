@@ -118,12 +118,14 @@
     }
 
     @media only screen and (max-width: 1180px) {
-        .modal-content {
-            height: 610px;
+        .modal-container{
+            height: 100vh;
         }
-        
+        .modal-content {
+            height: 95vh;
+        }
         .modal-info {
-            height: 580px;
+            height: 100%;
         }
         .modal-skill-container {
             max-height: 70px;
