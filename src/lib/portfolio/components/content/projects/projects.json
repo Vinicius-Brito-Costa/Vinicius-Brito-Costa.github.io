@@ -16,13 +16,13 @@
             ],
             "links": [
                 {
-                    "name": "vinicius.brito-costa.com/portfolio",
+                    "name": "portfolio",
                     "url": "https://www.vinicius.brito-costa.com/portfolio"
                 }
             ]
         },
         {
-            "name":"DAPI - Digimon API",
+            "name":"Digimon API",
             "banner": "/portfolio/projects/digi_api_banner.png",
             "markdown": "digimon_api",
             "technologies": [

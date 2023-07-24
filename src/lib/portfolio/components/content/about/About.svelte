@@ -13,12 +13,17 @@
         border-left: 3px solid var(--main-color);
         color: var(--secondary-color);
     }
+
+    @media only screen and (max-width: 1180px) {
+        article {
+            width: calc(100% - 13px);
+        }
+    }
 </style>
 <svelte:head>
 	<title>{headData.head["tab-settings"]["tab-names"].contact}</title>
     <meta name="description" content={data.meta.description} />
 </svelte:head>
 <article>
-    <!-- <div class="profile-picture"></div> -->
     {data.about.description}
 </article>

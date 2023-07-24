@@ -19,6 +19,16 @@
     .contact-link:hover {
         color: var(--main-accent-color);
     }
+
+    @media only screen and (max-width: 1180px) {
+        article {
+            width: 100%;
+        }
+        .contact-link {
+            font-size: var(--link-size-mobile);
+            display: block;
+        }
+    }
 </style>
 <svelte:head>
 	<title>{headData.head["tab-settings"]["tab-names"].contact}</title>

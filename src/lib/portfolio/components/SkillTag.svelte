@@ -27,5 +27,7 @@
     .skill-tag img {
         height: 15px;
     }
+    @media only screen and (max-width: 1180px) {
+    }
 </style>
 <span class="skill-tag"><div><img src={hashtagUrl} alt="hashtag" />{skill.name}</div></span>

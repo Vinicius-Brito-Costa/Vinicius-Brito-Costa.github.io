@@ -31,13 +31,20 @@
         --secondary-color: rgb(218, 218, 218);
         --secondary-accent-color: white;
         --hack-font: "Hack";
+
+        --title-size-h1-mobile: 30px;
+        --link-size-mobile: 20px;
+
         --title-size-h1-full: 40px;
         --title-size-h2-full: 30px;
         --title-size-h3-full: 20px;
         
+        --xsmall-space: 5px;
         --small-space: 15px;
         --medium-space: 25px;
         --large-space: 35px;
+
+        --first-width-break: 1180px;
     }
     .background {
         z-index: 2;
@@ -89,6 +96,27 @@
         font-size: var(--title-size-h1-full);
         color: var(--main-color);
     }
+
+    @media only screen and (max-width: 1180px) {
+        .main-container {
+            padding: var(--xsmall-space);
+        }
+        .spacer{
+            padding: var(--xsmall-space);
+            height: calc(100% - 10px);
+        }
+        .terminal-start {
+            width: 20px;
+            font-size: var(--title-size-h1-mobile);
+            padding: 0px 10px 0px 0px;
+        }
+        .content-info {
+            flex-direction: column;
+        }
+        .filler {
+            width: 35px;
+        }
+    }
 </style>
 <svelte:head>
 	<title>{data.head["tab-settings"]["tab-names"].base}</title>
@@ -107,6 +135,7 @@
                             <slot></slot>
                         </div>
                     </div>
+                    <div class="filler"></div>
                 </main>
             </div>
         </div>

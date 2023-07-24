@@ -43,11 +43,38 @@
         flex-direction: row;
         justify-content: center;
     }
+
+    @media only screen and (max-width: 1180px) {
+        .project-container button {
+            position: relative;
+            flex-direction: row;
+        }
+        .project-container h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+            padding: 0;
+            text-align: center;
+            margin: auto;
+            border: none;
+        }
+        .project-container img {
+            opacity: .2;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+        .project-technologies{
+            display: none;
+        }
+    }
 </style>
 <div class="project-container" style="height: {projectHeight}px;">
     <button on:click={() => {activateModal(project)}} on:keyup={()=> {}} >
         <img src={project.banner} alt={project.name}/>
-        <h2>{project.name}</h2>
+        <h2>{project.name.replace(/ /g, '\u00a0')}</h2>
         <div class="project-technologies">
             {#each project.technologies as tech, index}
                 {#if index < 3}

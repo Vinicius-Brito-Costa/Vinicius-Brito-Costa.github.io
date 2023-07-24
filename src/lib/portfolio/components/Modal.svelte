@@ -35,6 +35,7 @@
         display: flex;
         flex-direction: column;
         background-color: black;
+        position: relative;
     }
 
     .modal-title{
@@ -105,9 +106,34 @@
         width: 100%;
         height: 100%;
     }
+    .modal-close-btn {
+        background-color: transparent;
+        border: none;
+        color: var(--secondary-color);
+        font-size: 30px;
+        position: absolute;
+        left: 98%;
+        transform: translate(-98%);
+        cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1180px) {
+        .modal-content {
+            height: 610px;
+        }
+        
+        .modal-info {
+            height: 580px;
+        }
+        .modal-skill-container {
+            max-height: 70px;
+            overflow-y: scroll;
+        }
+    }
 </style>
 <div class="modal-container modal-{open ? "open" : "close"} ">
     <div class="modal-content">
+        <button class="modal-close-btn" on:click={() => activateModal(null)}>X</button>
         <div class="modal-info">
             <div class="modal-title">
                 <h2>{project.name}</h2>

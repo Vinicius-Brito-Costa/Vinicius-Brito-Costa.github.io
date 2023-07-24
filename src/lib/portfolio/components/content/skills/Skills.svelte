@@ -15,6 +15,17 @@
     .tag-container {
         display: flex;
     }
+
+    @media only screen and (max-width: 1180px) {
+        article{
+            height: 350px;
+            overflow-y: scroll;
+        }
+        .tag-container{
+            margin-left: 20px;
+            flex-wrap: wrap;
+        }
+    }
 </style>
 <script>
     import headData from "$lib/portfolio/common.json"

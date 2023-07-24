@@ -9,6 +9,12 @@
     .container {
         padding-right: 60px;
     }
+
+    @media only screen and (max-width: 1180px) {
+        .container {
+            padding-right: 0px;
+        }
+    }
 </style>
 
 <div class="container">
