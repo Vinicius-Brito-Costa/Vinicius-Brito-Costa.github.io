@@ -12,12 +12,12 @@
 <style>
     @font-face {
         font-family: 'Hack';
-        src: url("/static/fonts/Hack-Regular.ttf") format("ttf");
+        src: url("/fonts/Hack-Regular.ttf") format("ttf");
 		font-style: normal;
     }
     @font-face {
         font-family: 'Hack';
-        src: url("/static/fonts/Hack-Bold.ttf") format("ttf");
+        src: url("/fonts/Hack-Bold.ttf") format("ttf");
 		font-style: bold;
     }
     :global(html) {
