@@ -17,8 +17,8 @@
         display: flex;
     }
     .modal-container {
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         top: 0;
         left: 0;
         position: absolute;
@@ -119,10 +119,10 @@
 
     @media only screen and (max-width: 1180px) {
         .modal-container{
-            height: 100vh;
+            height: 100%;
         }
         .modal-content {
-            height: 95vh;
+            height: 95%;
         }
         .modal-info {
             height: 100%;
