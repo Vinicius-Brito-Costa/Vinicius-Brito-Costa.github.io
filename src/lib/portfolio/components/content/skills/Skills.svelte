@@ -18,8 +18,12 @@
 
     @media only screen and (max-width: 1180px) {
         article{
-            height: 350px;
-            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .container {
+            height: 100%;
         }
         .tag-container{
             margin-left: 20px;
@@ -37,15 +41,17 @@
     <meta name="description" content={data.meta.description} />
 </svelte:head>
 <article>
-    <h3 class="title">Technologies:</h3>
-    <div>
-        {#each data.skills as skillBranch}
-            <h3>{Object.keys(skillBranch).toString().replace("-", " ")}</h3>
-            <div class="tag-container">
-                {#each skillBranch[Object.keys(skillBranch)] as skill}
-                    <SkillTag skill={skill} />
-                {/each}
-            </div>
-        {/each}
+    <div class="container">
+        <h3 class="title">Technologies:</h3>
+        <div>
+            {#each data.skills as skillBranch}
+                <h3>{Object.keys(skillBranch).toString().replace("-", " ")}</h3>
+                <div class="tag-container">
+                    {#each skillBranch[Object.keys(skillBranch)] as skill}
+                        <SkillTag skill={skill} />
+                    {/each}
+                </div>
+            {/each}
+        </div>
     </div>
 </article>

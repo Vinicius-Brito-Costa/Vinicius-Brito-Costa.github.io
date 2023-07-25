@@ -20,9 +20,11 @@
         src: url("/static/fonts/Hack-Bold.ttf") format("ttf");
 		font-style: bold;
     }
+    :global(html) {
+        height: 100%;
+    }
     :global(body){
-        width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: rgb(27, 27, 27);
     }
     :global(:root){
@@ -50,6 +52,8 @@
         z-index: 2;
         width: 100%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
     }
     .noise-filter {
         z-index: -1;
@@ -66,11 +70,15 @@
 
     }
     .main-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
         padding: var(--small-space);
-        height: calc(100vh - calc(var(--small-space) * 2));
     }
     .border-line {
         height: 100%;
+        display: flex;
+        flex-direction: column;
         border: 2px solid var(--main-color);
     }
     .spacer{
@@ -83,6 +91,7 @@
     }
     .content {
         width: 100%;
+        height: 100%;
     }
     .content-info {
         padding-top: 10px;
@@ -110,7 +119,14 @@
             font-size: var(--title-size-h1-mobile);
             padding: 0px 10px 0px 0px;
         }
+        .content {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
         .content-info {
+            height: 100%;
+            flex: 1;
             flex-direction: column;
         }
         .filler {

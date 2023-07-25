@@ -5,7 +5,7 @@
 <style>
     .project-container {
         background-color: transparent;
-        margin: 0px 0px 30px 0px;
+        margin: 0;
         padding: 0;
         border: 3px solid var(--main-color);
     }
@@ -33,7 +33,6 @@
         width: 100%;
         font-size: var(--title-size-h2-full);
         margin: 0px;
-        padding: 10px 0px;
         border-top: 1px solid var(--main-color);
         border-bottom: 1px solid var(--main-color);
     }

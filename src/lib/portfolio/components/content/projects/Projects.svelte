@@ -33,12 +33,26 @@
     }
     .main-container {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 
     @media only screen and (max-width: 1180px) {
+        article {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .main-container {
+            flex: 1;
+        }
         .mask-wrapper {
             width: 100%;
-            height: 400px;
+            display: flex;
+            flex-direction: column;
         }
     }
 </style>
@@ -49,10 +63,11 @@
 </svelte:head>
 <article>
     <div class="mask-wrapper">
-        <div class="main-container" style="height: {projectHeight * (data.projects.length + 1) - projectHeight / 2}px;">
+        <div class="main-container">
             {#each data.projects as project}
             <Project project={project} projectHeight={screenSize >= 1180 ? projectHeight : projectHeight / 2} activateModal={activateModal} />
             {/each}
+            <div id="filler" style="height: {screenSize >= 1180 ? projectHeight : projectHeight / 4}px"></div>
         </div>
     </div>
     <Modal project={modalData} open={open} activateModal={activateModal} />

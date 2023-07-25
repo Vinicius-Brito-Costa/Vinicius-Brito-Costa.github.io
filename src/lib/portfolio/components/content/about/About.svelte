@@ -9,14 +9,22 @@
         width: 600px;
         padding-left: 10px;
         text-align: justify;
+        align-items: center;
         font-family: var(--hack-font);
         border-left: 3px solid var(--main-color);
         color: var(--secondary-color);
+        display: flex;
+    }
+
+    article p {
+        margin: 0;
+        padding: 0;
     }
 
     @media only screen and (max-width: 1180px) {
         article {
             width: calc(100% - 13px);
+            padding: 10px 10px;
         }
     }
 </style>
@@ -25,5 +33,7 @@
     <meta name="description" content={data.meta.description} />
 </svelte:head>
 <article>
-    {data.about.description}
+    <p>
+        {data.about.description}
+    </p>
 </article>
