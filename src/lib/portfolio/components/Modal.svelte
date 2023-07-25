@@ -50,7 +50,8 @@
         height: 680px;
         display: flex;
         flex-direction: column;
-        margin: 10px;
+        gap: 10px;
+        margin: 0 10px;
     }
     .modal-skill {
         margin-top: 5px;
@@ -66,13 +67,13 @@
         margin-bottom: auto;
         display: flex;
         flex-direction: column;
+        height: 380px;
     }
     .modal-skill-container {
         width: 100%;
         align-self: flex-end;
         display: flex;
         flex-direction: column;
-        margin: 10px 0;
         padding: 5px 0;
         border-top: 1px solid var(--main-color);
         border-bottom: 1px solid var(--main-color);
@@ -90,6 +91,7 @@
     }
 
     .footer {
+        height: 30px;
         align-content: end;
         align-self: flex-end;
     }
@@ -128,7 +130,7 @@
             height: 100%;
         }
         .modal-skill-container {
-            max-height: 70px;
+            height: 60px;
             overflow-y: scroll;
         }
     }
