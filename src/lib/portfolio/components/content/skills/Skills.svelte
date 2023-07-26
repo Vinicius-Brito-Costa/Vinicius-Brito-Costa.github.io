@@ -1,6 +1,7 @@
 <style>
     article {
         font-family: var(--hack-font);
+        overflow-y: scroll;
     }
     article h3 {
         font-size: var(--title-size-h3-full);
@@ -8,7 +9,6 @@
         margin-bottom: 0px;
         margin-top: 5px;
         text-transform:capitalize;
-        overflow-y: scroll;
     }
     .title {
         margin-bottom: 20px;
