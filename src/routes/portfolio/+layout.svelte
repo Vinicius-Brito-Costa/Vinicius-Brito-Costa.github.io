@@ -53,7 +53,7 @@
     }
 
     :global(::-webkit-scrollbar-thumb:hover) {
-        background: rgba(0, 0, 0, 0.803)(0, 0, 0, 0.418); 
+        background: rgba(0, 0, 0, 0.803); 
     }
     .background {
         z-index: 2;
