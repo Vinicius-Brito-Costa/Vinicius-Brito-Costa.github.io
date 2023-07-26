@@ -8,6 +8,7 @@
         margin-bottom: 0px;
         margin-top: 5px;
         text-transform:capitalize;
+        overflow-y: scroll;
     }
     .title {
         margin-bottom: 20px;
