@@ -23,10 +23,10 @@
         --secondary-color: rgb(218, 218, 218);
         --secondary-accent-color: white;
         --hack-font: "Hack";
-
+        
         --title-size-h1-mobile: 30px;
         --link-size-mobile: 20px;
-
+        
         --title-size-h1-full: 40px;
         --title-size-h2-full: 30px;
         --title-size-h3-full: 20px;
@@ -35,8 +35,25 @@
         --small-space: 15px;
         --medium-space: 25px;
         --large-space: 35px;
-
+        
         --first-width-break: 1180px;
+        --border-radius: 0.35rem;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent; 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: var(--border-radius);
+        background: #888; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
     }
     .background {
         z-index: 2;

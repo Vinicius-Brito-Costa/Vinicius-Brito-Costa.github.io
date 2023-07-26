@@ -22,10 +22,12 @@
         .container-spacer {
             display: flex;
             flex-direction: column;
-            overflow-y: scroll;
         }
     }
     @media only screen and (max-height: 865px) {
+        .container-spacer {
+            overflow-y: scroll;
+        }
         .container-spacer {
             height: 450px;
         }
