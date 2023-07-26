@@ -9,9 +9,6 @@
     let open = false
     let projectHeight = 400
 
-    function getContainerHeight() {
-        return screenSize >= 1180 ? projectHeight / 2 : projectHeight
-    }
     function activateModal(project){
         if (project != undefined){
             modalData = project
@@ -26,7 +23,7 @@
     .mask-wrapper {
         width: 550px;
         height: 600px;
-        overflow: scroll;
+        overflow-y: scroll;
         -webkit-mask-image: -webkit-linear-gradient(-90deg, rgba(0,0,0,1) 70%, rgba(255,255,255,0) 100%);
     }
     .main-container {
@@ -53,6 +50,11 @@
             flex-direction: column;
         }
     }
+    @media only screen and (max-height: 865px) {
+        .mask-wrapper {
+            height: 450px;
+        }
+    }
 </style>
 <svelte:window bind:innerWidth={screenSize} />
 <svelte:head>
@@ -65,7 +67,7 @@
             {#each data.projects as project}
             <Project project={project} projectHeight={screenSize >= 1180 ? projectHeight : projectHeight / 2} activateModal={activateModal} />
             {/each}
-            <div id="filler" style="height: {screenSize >= 1180 ? projectHeight : projectHeight / 4}px"></div>
+            <div id="filler" style="height: {screenSize >= 1180 ? projectHeight : projectHeight / 2}px"></div>
         </div>
     </div>
     <Modal project={modalData} open={open} activateModal={activateModal} />

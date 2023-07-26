@@ -13,6 +13,10 @@
         height: 100%;
     }
 
+    .container-spacer {
+        overflow: hidden;
+    }
+
     @media only screen and (max-width: 1180px) {
         .container {
             flex-direction: column;
@@ -25,9 +29,6 @@
         }
     }
     @media only screen and (max-height: 865px) {
-        .container-spacer {
-            overflow-y: scroll;
-        }
         .container-spacer {
             height: 450px;
         }

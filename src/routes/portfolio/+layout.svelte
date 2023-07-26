@@ -39,21 +39,21 @@
         --first-width-break: 1180px;
         --border-radius: 0.35rem;
     }
-    ::-webkit-scrollbar {
+    :global(::-webkit-scrollbar) {
         width: 10px;
     }
 
-    ::-webkit-scrollbar-track {
+    :global(::-webkit-scrollbar-track) {
         background: transparent; 
     }
     
-    ::-webkit-scrollbar-thumb {
+    :global(::-webkit-scrollbar-thumb) {
         border-radius: var(--border-radius);
-        background: #888; 
+        background: rgba(0, 0, 0, 0.418); 
     }
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
+    :global(::-webkit-scrollbar-thumb:hover) {
+        background: rgba(0, 0, 0, 0.803)(0, 0, 0, 0.418); 
     }
     .background {
         z-index: 2;
