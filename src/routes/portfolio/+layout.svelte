@@ -10,16 +10,6 @@
     let selectedLink = $page.route.id.replace("/portfolio/", "")
 </script>
 <style>
-    @font-face {
-        font-family: 'Hack';
-        src: url("/fonts/Hack-Regular.ttf") format("ttf");
-		font-style: normal;
-    }
-    @font-face {
-        font-family: 'Hack';
-        src: url("/fonts/Hack-Bold.ttf") format("ttf");
-		font-style: bold;
-    }
     :global(html) {
         height: 100%;
     }
@@ -137,6 +127,7 @@
 <svelte:head>
 	<title>{data.head["tab-settings"]["tab-names"].base}</title>
     <link rel="icon" href={data.head.favicon} />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
 </svelte:head>
 <div class="background">
     <div class="main-container">
