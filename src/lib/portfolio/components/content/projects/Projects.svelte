@@ -14,14 +14,12 @@
     }
     function activateModal(project){
         if (project != undefined){
-            console.log(project)
             modalData = project
             open = true
         }
         else {
             open = false
         }
-        console.log(open)
     }
 </script>
 <style>
