@@ -16,8 +16,12 @@
             ],
             "links": [
                 {
-                    "name": "portfolio",
-                    "url": "https://www.vinicius.brito-costa.com/portfolio"
+                    "name": "You are here!",
+                    "url": "/portfolio"
+                },
+                {
+                    "name": "Github",
+                    "url": "https://github.com/Vinicius-Brito-Costa/personal-site"
                 }
             ]
         },
