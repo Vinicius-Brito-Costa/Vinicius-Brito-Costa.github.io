@@ -29,7 +29,7 @@
     }
 </style>
 <svelte:head>
-	<title>{headData.head["tab-settings"]["tab-names"].contact}</title>
+	<title>{headData.head["tab-settings"]["tab-names"].about}</title>
     <meta name="description" content={data.meta.description} />
 </svelte:head>
 <article>

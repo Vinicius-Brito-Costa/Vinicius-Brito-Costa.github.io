@@ -58,7 +58,7 @@
 </style>
 <svelte:window bind:innerWidth={screenSize} />
 <svelte:head>
-	<title>{headData.head["tab-settings"]["tab-names"].contact}</title>
+	<title>{headData.head["tab-settings"]["tab-names"].projects}</title>
     <meta name="description" content={data.meta.description} />
 </svelte:head>
 <article>

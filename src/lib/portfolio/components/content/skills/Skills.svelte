@@ -38,7 +38,7 @@
     import SkillTag from "$lib/portfolio/components/SkillTag.svelte";
 </script>
 <svelte:head>
-	<title>{headData.head["tab-settings"]["tab-names"].contact}</title>
+	<title>{headData.head["tab-settings"]["tab-names"].skills}</title>
     <meta name="description" content={data.meta.description} />
 </svelte:head>
 <article>
