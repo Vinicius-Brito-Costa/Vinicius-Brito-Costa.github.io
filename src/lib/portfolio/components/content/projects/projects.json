@@ -2,7 +2,7 @@
     "projects": [
         {
             "name":"Portfolio",
-            "banner": "/portfolio/projects/portfolio_banner.png",
+            "banner": "/portfolio/projects/portfolio_banner.webp",
             "markdown": "portfolio",
             "technologies": [
                 {
@@ -27,7 +27,7 @@
         },
         {
             "name":"Digimon API",
-            "banner": "/portfolio/projects/digi_api_banner.png",
+            "banner": "/portfolio/projects/digi_api_banner.webp",
             "markdown": "digimon_api",
             "technologies": [
                 {
@@ -52,7 +52,7 @@
         },
         {
             "name":"ShootaGun",
-            "banner": "/portfolio/projects/shootagun_banner.png",
+            "banner": "/portfolio/projects/shootagun_banner.webp",
             "markdown": "shootagun",
             "technologies": [
                 {
