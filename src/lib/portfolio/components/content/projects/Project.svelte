@@ -1,9 +1,11 @@
 <script>
+  import ImageLoader from "../../../ImageLoader.svelte";
     import SkillTag from "../../SkillTag.svelte";
-    export let project, projectHeight, activateModal
+    export let project, activateModal
 </script>
 <style>
     .project-container {
+        height: 100%;
         background-color: transparent;
         margin: 0;
         padding: 0;
@@ -24,10 +26,9 @@
         align-items: center;
         align-content: center;
     }
-    .project-container img {
-        width: 100%;
+    .project-banner {
         height: 300px;
-        object-fit: cover;
+        width: 100%;
     }
     .project-container h2 {
         width: 100%;
@@ -48,6 +49,10 @@
             position: relative;
             flex-direction: row;
         }
+        .project-banner {
+            opacity: .2;
+            height: 100%;
+        }
         .project-container h2 {
             position: absolute;
             top: 50%;
@@ -59,20 +64,17 @@
             margin: auto;
             border: none;
         }
-        .project-container img {
-            opacity: .2;
-            height: 100%;
-            object-fit: cover;
-            object-position: top;
-        }
         .project-technologies{
             display: none;
         }
     }
 </style>
-<div class="project-container" style="height: {projectHeight}px;">
+<div class="project-container">
     <button on:click={() => {activateModal(project)}} on:keyup={()=> {}} >
-        <img src={project.banner} alt={project.name}/>
+        <div class="project-banner">
+            <ImageLoader name={project.name} fullres={project.banner} lowres={project.banner_low_res} />
+        </div>
+        <!-- <img src={project.banner} alt={project.name} loading="lazy"/> -->
         <h2>{project.name.replace(/ /g, '\u00a0')}</h2>
         <div class="project-technologies">
             {#each project.technologies as tech, index}

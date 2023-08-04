@@ -4,7 +4,7 @@
     import Project from "$lib/portfolio/components/content/projects/Project.svelte"
     import Modal from "$lib/portfolio/components/Modal.svelte"
 
-    let screenSize;
+    let screenSize = 1180;
     let modalData = data.projects[0]
     let open = false
     let projectHeight = 400
@@ -65,7 +65,9 @@
     <div class="mask-wrapper">
         <div class="main-container">
             {#each data.projects as project}
-            <Project project={project} projectHeight={screenSize >= 1180 ? projectHeight : projectHeight / 2} activateModal={activateModal} />
+            <div class="project-container" style="height: {screenSize >= 1180 ? projectHeight : projectHeight / 2}px">
+                <Project project={project} activateModal={activateModal} />
+            </div>
             {/each}
             <div id="filler" style="height: {screenSize >= 1180 ? projectHeight : projectHeight / 2}px"></div>
         </div>

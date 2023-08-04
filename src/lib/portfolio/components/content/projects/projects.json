@@ -3,6 +3,7 @@
         {
             "name":"Portfolio",
             "banner": "/portfolio/projects/portfolio_banner.webp",
+            "banner_low_res": "/portfolio/projects/low_res/portfolio_banner_low_res.webp",
             "markdown": "portfolio",
             "technologies": [
                 {
@@ -28,6 +29,7 @@
         {
             "name":"Digimon API",
             "banner": "/portfolio/projects/digi_api_banner.webp",
+            "banner_low_res": "/portfolio/projects/low_res/digi_api_banner_low_res.webp",
             "markdown": "digimon_api",
             "technologies": [
                 {
@@ -53,6 +55,7 @@
         {
             "name":"ShootaGun",
             "banner": "/portfolio/projects/shootagun_banner.webp",
+            "banner_low_res": "/portfolio/projects/low_res/shootagun_banner_low_res.webp",
             "markdown": "shootagun",
             "technologies": [
                 {
