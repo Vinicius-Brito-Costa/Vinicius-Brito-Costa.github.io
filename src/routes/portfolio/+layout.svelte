@@ -101,6 +101,7 @@
         height: 100%;
     }
     .content-info {
+        height: 80%;
         padding-top: 10px;
         display: flex;
         justify-content: space-between;

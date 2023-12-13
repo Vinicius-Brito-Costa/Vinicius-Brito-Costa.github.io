@@ -115,6 +115,7 @@
         font-size: 30px;
         position: absolute;
         left: 98%;
+        top: 18px;
         transform: translate(-98%);
         cursor: pointer;
     }
