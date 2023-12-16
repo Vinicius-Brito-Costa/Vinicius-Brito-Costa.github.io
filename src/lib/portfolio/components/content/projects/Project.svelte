@@ -1,5 +1,5 @@
 <script>
-  import ImageLoader from "../../../ImageLoader.svelte";
+    import ImageLoader from "../../../ImageLoader.svelte";
     import SkillTag from "../../SkillTag.svelte";
     export let project, activateModal
 </script>

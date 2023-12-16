@@ -13,7 +13,7 @@
     }
     .blur_mode {
         position: relative;
-        opacity: .5;
+        opacity: 1;
         display: block;
         height: 100%;
         width: 100%;
