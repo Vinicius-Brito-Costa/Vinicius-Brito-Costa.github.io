@@ -50,11 +50,10 @@
         height: 680px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
         margin: 0 10px;
     }
     .modal-skill {
-        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .modal-skill-title {
         color: var(--secondary-accent-color);
@@ -94,6 +93,7 @@
         height: 30px;
         align-content: end;
         align-self: flex-end;
+        align-content: center;
     }
 
     .footer a {
