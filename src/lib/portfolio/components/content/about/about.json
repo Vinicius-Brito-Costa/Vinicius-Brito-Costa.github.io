@@ -1,6 +1,10 @@
 {
     "about": {
-        "description": "Passionate about technology.\nI'm very curious and always looking forward to improve and get new skills, strong believer that one of the best ways to progress is to resolve problems (mainly the complex ones), because of that, if you or your company have one contact me so we can solve this together."
+        "profile_picture": {
+            "img_url": "https://github.com/Vinicius-Brito-Costa.png?size=32",
+            "alt": "Vinicius (Pixelated) Profile Picture"
+        },
+        "description": "A passionate tech enthusiast with a focus on continuous learning and growth. Currently working as a Software Engineer on a payment gateway, where my responsibilities include product development, system support, and ensuring smooth operations."
     },
     "meta": {
         "description": "Information about Vinicius backstory."
