@@ -1,7 +1,7 @@
 {
     "skills": [
         {
-            "backend":[
+            "technologies":[
                 {
                     "name": "java"
                 },
@@ -9,10 +9,16 @@
                     "name": "spring-boot"
                 },
                 {
-                    "name": "c-sharp"
+                    "name": "gdscript"
                 },
                 {
                     "name": "go"
+                },
+                {
+                    "name": "svelte"
+                },
+                {
+                    "name": "svelte-kit"
                 }
             ]
         },
@@ -23,25 +29,6 @@
                 },
                 {
                     "name": "my-sql"
-                }
-            ]
-        },
-        {
-            "frontend":[
-                {
-                    "name": "html"
-                },
-                {
-                    "name": "css"
-                },
-                {
-                    "name": "javascript"
-                },
-                {
-                    "name": "svelte"
-                },
-                {
-                    "name": "svelte-kit"
                 }
             ]
         },
