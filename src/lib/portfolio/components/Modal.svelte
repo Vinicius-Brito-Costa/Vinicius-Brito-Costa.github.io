@@ -3,9 +3,16 @@
     export let project, open, activateModal
 
     function parseMarkdown(md) {
+        // marked.Renderer.prototype.paragraph = (text) => {
+        //     return text
+        // }
         marked.Renderer.prototype.paragraph = (text) => {
-            return text
-        }
+            if (text.startsWith("<img")) {
+                return text + "\n";
+            }
+            return "<p>" + text + "</p>";
+        };
+
         return marked.parse(md.default, {gfm: true, mangle: false})
     }
 </script>
@@ -27,7 +34,7 @@
     }
     .modal-content {
         z-index: 2;
-        width: 90%;
+        width: 80%;
         height: 700px;
         border: 3px solid var(--main-color);
         font-family: var(--hack-font);
@@ -40,6 +47,7 @@
 
     .modal-title{
         color: var(--secondary-accent-color);
+        flex: 1;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -47,10 +55,11 @@
         align-self: center;
     }
     .modal-info {
-        height: 680px;
+        height: 100%;
         display: flex;
         flex-direction: column;
         margin: 0 10px;
+        align-items: center;
     }
     .modal-skill {
         margin-bottom: 5px;
@@ -63,19 +72,29 @@
     }
     .modal-description {
         overflow-y: scroll;
-        margin-bottom: auto;
         display: flex;
-        flex-direction: column;
-        height: 380px;
+        gap: 10px;
+        flex-direction: row-reverse;
+        /* height: 380px; */
+        flex: 10;
+        scrollbar-width: none;
+    }
+    :global(.modal-description p){
+        flex: 1;
+        text-align: justify;
+        align-self: right;
     }
     .modal-skill-container {
         width: 100%;
         align-self: flex-end;
         display: flex;
         flex-direction: column;
+        flex: 2;
         padding: 5px 0;
         border-top: 1px solid var(--main-color);
         border-bottom: 1px solid var(--main-color);
+        height: 100%;
+        justify-content: center;
     }
     :global(.video-player) {
         width: 400px;
@@ -84,12 +103,16 @@
         margin: auto;
     }
     :global(.modal-description img) {
-        height: 200px;
-        object-fit: contain;
-        margin-bottom: 10px;
+        height: 100%;
+        object-fit:cover;
+        /* object-position: top; */
+        flex: 2;
+        /* border-left: 1px solid var(--main-color); */
+        border: 1px solid var(--main-color);
     }
 
     .footer {
+        flex: 1;
         height: 30px;
         align-content: end;
         align-self: flex-end;
@@ -120,6 +143,12 @@
         cursor: pointer;
     }
 
+    @media only screen and (max-width: 1500px) {
+        .modal-content {
+            width: 90%;
+        }
+    }
+
     @media only screen and (max-width: 1180px) {
         .modal-container{
             height: 100%;
@@ -130,9 +159,17 @@
         .modal-info {
             height: 100%;
         }
+        .modal-description {
+            gap: 10px;
+            flex-direction: column;
+        }
+        :global(.modal-description img) {
+            height: 200px;
+        }
         .modal-skill-container {
             height: 60px;
             overflow-y: scroll;
+            justify-content:start;
         }
     }
 </style>
