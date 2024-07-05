@@ -1,5 +1,5 @@
 <script>
-    export let height, name, fullres, lowres
+    export let name, fullres, lowres
 
     let image_loaded = false
     function onload() {

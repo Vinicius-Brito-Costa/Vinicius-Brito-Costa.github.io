@@ -24,6 +24,7 @@
         width: 550px;
         height: 600px;
         overflow-y: scroll;
+        overflow-x: hidden;
         -webkit-mask-image: -webkit-linear-gradient(-90deg, rgba(0,0,0,1) 95%, rgba(255, 255, 255, 0) 100%);
     }
     .main-container {

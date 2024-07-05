@@ -41,7 +41,7 @@
         border-radius: 100%;
         overflow: hidden;
         margin: 0 auto;
-        border: 3px solid var(--main-color);
+        border: 1px solid var(--main-color);
         background-color: var(--main-color);
     }
     @media only screen and (max-width: 1180px) {
