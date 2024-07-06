@@ -1,6 +1,10 @@
 # Vinicius Personal Site
 
-This site was created with Svelte/SvelteKit, to run it you will need [node and npm](https://nodejs.org/en).
+Welcome to my portfolio! This is a webapp that is build around data, you can see some ```.json``` and ```.md``` files lying around here, they are used as a data source to build the site, feel free to edit them and see what happens.
+
+## Dependencies
+
+This site was created with Svelte/SvelteKit, to run it you will need [node (>= v18) and npm](https://nodejs.org/en).
 
 ## Running this project
 
