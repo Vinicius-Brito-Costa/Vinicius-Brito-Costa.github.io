@@ -46,13 +46,21 @@
     }
 
     .modal-title{
-        color: var(--secondary-accent-color);
+        color: var(--secondary-color);
         flex: 1;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         align-content: center;
         align-self: center;
+    }
+    .modal-title h2 {
+        margin-bottom: 0;
+        color: var(--secondary-accent-color);
+    }
+    .modal-title h4 {
+        margin: 0 0 10px 0;
+        font-weight: 100;
     }
     .modal-info {
         height: 100%;
@@ -162,6 +170,7 @@
         .modal-description {
             gap: 10px;
             flex-direction: column;
+            width: 100%;
         }
         :global(.modal-description img) {
             height: 200px;
@@ -179,6 +188,7 @@
         <div class="modal-info">
             <div class="modal-title">
                 <h2>{project.name}</h2>
+                <h4>{project.categories}</h4>
             </div>
             <div class="modal-description">
                 {#await import(`./content/projects/markdown/${project.markdown}.md?raw`)}

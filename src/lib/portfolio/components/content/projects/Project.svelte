@@ -34,8 +34,14 @@
         width: 100%;
         font-size: var(--title-size-h2-full);
         margin: 0px;
-        border-top: 1px solid var(--main-color);
-        border-bottom: 1px solid var(--main-color);
+        padding-top: 5px;
+        border-top: 3px solid var(--main-color);
+        /* border-bottom: 1px solid var(--main-color); */
+    }
+    .project-categories {
+        display: flex;
+        flex: .5;
+        justify-content: center;
     }
     .project-technologies {
         display: flex;
@@ -64,6 +70,19 @@
             margin: auto;
             border: none;
         }
+
+        .project-categories {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: auto;
+            padding: 0;
+            text-align: center;
+            margin: auto;
+            border: none;
+        }
+
         .project-technologies{
             display: none;
         }
@@ -76,6 +95,11 @@
         </div>
         <!-- <img src={project.banner} alt={project.name} loading="lazy"/> -->
         <h2>{project.name.replace(/ /g, '\u00a0')}</h2>
+        <div class="project-categories">
+            {#each project.categories as category}
+                <span>{category.toLowerCase()}</span>
+            {/each}
+        </div>
         <div class="project-technologies">
             {#each project.technologies as tech, index}
                 {#if index < 3}
