@@ -48,7 +48,6 @@
         article {
             width: calc(100% - 13px);
             height: 450px;
-            padding: 10px 10px;
         }
     }
 </style>
