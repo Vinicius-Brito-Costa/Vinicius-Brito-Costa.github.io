@@ -20,8 +20,11 @@
     }
 </script>
 <style>
+    article {
+        flex: 1;
+    }
     .mask-wrapper {
-        width: 550px;
+        /* width: 550px; */
         height: 600px;
         overflow-y: scroll;
         overflow-x: hidden;

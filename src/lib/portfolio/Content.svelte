@@ -11,10 +11,14 @@
         padding-right: 60px;
         display: flex;
         height: 100%;
+        flex: 5;
     }
 
     .container-spacer {
+        width: 100%;
+        height: 100%;
         overflow: hidden;
+        display: flex;
     }
 
     @media only screen and (max-width: 1180px) {

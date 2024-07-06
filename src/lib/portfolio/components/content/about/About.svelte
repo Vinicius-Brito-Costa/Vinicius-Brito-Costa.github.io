@@ -14,6 +14,7 @@
         color: var(--secondary-color);
         display: flex;
         flex-direction: column;
+        margin-left: auto;
     }
 
     article p {
@@ -47,8 +48,11 @@
     @media only screen and (max-width: 1180px) {
         article {
             width: calc(100% - 13px);
-            height: 450px;
+            /* height: 450px; */
+            margin: 0;
+            align-content: end;
         }
+        
     }
 </style>
 <svelte:head>

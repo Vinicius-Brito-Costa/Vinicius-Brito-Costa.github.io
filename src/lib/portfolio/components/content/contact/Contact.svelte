@@ -5,7 +5,10 @@
 <style>
     article {
         display: flex;
-        width: 600px;
+        flex: 1;
+        margin-left: auto;
+        margin-top: auto;
+        justify-content: end;
     }
     .contact {
         font-family: var(--hack-font);
@@ -23,6 +26,10 @@
     @media only screen and (max-width: 1180px) {
         article {
             width: 100%;
+            justify-content: center;
+        }
+        .contact {
+            margin-top: auto;
         }
         .contact-link {
             font-size: var(--link-size-mobile);
@@ -39,6 +46,5 @@
         {#each data.contacts as contact}
             <h2 class="contact-name">{contact.name}: <a href={(contact.type == "email" ? "mailto:" : "") + contact.contact} target="_blank" class="contact-link">{contact.title}</a></h2>
         {/each}
-        
     </div>
 </article>

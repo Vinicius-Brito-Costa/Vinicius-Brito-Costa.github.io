@@ -16,12 +16,16 @@
         padding: 0;
         margin: 0;
     }
+    .divider {
+        flex: 3;
+    }
     @media only screen and (max-width: 1180px) {
         .divider {
             opacity: 0.5;
             border-bottom: solid 1px var(--main-color);
             margin: 0px 40px;
             margin-bottom: 10px;
+            flex: 0;
         }
     }
 </style>
