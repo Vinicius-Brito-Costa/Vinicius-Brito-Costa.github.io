@@ -3,16 +3,16 @@
         "favicon": "/portfolio/favicon_portfolio.png",
         "tab-settings": {
             "tab-names": {
-                "base": "Vinicius",
-                "about": "Vinicius: About",
-                "projects": "Vinicius: Projects",
-                "skills": "Vinicius: Skills",
-                "contact": "Vinicius: Contact"
+                "base": "Vinícius",
+                "about": "Vinícius: About",
+                "projects": "Vinícius: Projects",
+                "skills": "Vinícius: Skills",
+                "contact": "Vinícius: Contact"
             }
         }
     },
     "header": {
-        "title": "Vinicius Brito Costa",
+        "title": "Vinícius Brito Costa",
         "sub-title": "SOFTWARE ENGINEER",
         "experience-start-date": "2021-04-01"
     }

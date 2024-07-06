@@ -5,6 +5,7 @@
 </script>
 <style>
     .skill-tag {
+        opacity: 45%;
         display: block;
         width: fit-content;
         background-color: var(--main-color);
@@ -18,6 +19,7 @@
     }
     .skill-tag:hover{
         background-color: var(--main-accent-color);
+        opacity: 100%;
     }
     .skill-tag div {
         display: flex;
