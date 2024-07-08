@@ -10,7 +10,7 @@
             if (text.startsWith("<img")) {
                 return text + "\n";
             }
-            return "<p>" + text + "</p>";
+            return "<p>" + text.replace("\n", "<br/>") + "</p>";
         };
 
         return marked.parse(md.default, {gfm: true, mangle: false})
@@ -117,6 +117,9 @@
         flex: 2;
         /* border-left: 1px solid var(--main-color); */
         border: 1px solid var(--main-color);
+    }
+    :global(.modal-description a) {
+        color: var(--secondary-accent-color);
     }
 
     .footer {
