@@ -68,7 +68,6 @@
 </svelte:head>
 <article class="mask-wrapper">
     <div class="container">
-        <h3 class="title">Technologies:</h3>
         <div class="skill-container">
             {#each data.skills as skillBranch}
                 <h3>{Object.keys(skillBranch).toString().replace("-", " ")}</h3>
