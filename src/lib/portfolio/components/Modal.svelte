@@ -111,12 +111,13 @@
         margin: auto;
     }
     :global(.modal-description img) {
-        height: 100%;
+        max-height: 100%;
         object-fit:cover;
         /* object-position: top; */
         flex: 2;
         /* border-left: 1px solid var(--main-color); */
         border: 1px solid var(--main-color);
+        border-bottom: 0px;
     }
     :global(.modal-description a) {
         color: var(--secondary-accent-color);
@@ -177,6 +178,7 @@
         }
         :global(.modal-description img) {
             height: 200px;
+            border: 1px solid var(--main-color);
         }
         .modal-skill-container {
             height: 60px;
