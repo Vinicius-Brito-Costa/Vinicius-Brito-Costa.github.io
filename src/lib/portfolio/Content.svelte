@@ -42,6 +42,12 @@
             height: 350px;
         }
     }
+
+    @media only screen and (max-height: 630px) {
+        .container-spacer {
+            height: 250px;
+        }
+    }
 </style>
 <svelte:window bind:innerHeight={screenSize} />
 <div class="container">
