@@ -98,6 +98,35 @@
                     "url": "https://github.com/Vinicius-Brito-Costa/ShootaGun"
                 }
             ]
+        },
+        {
+            "name":"Pomodoro",
+            "categories": [
+                "productivity"
+            ],
+            "banner": "/portfolio/projects/digimon_pomodoro_banner.webp",
+            "banner_low_res": "/portfolio/projects/low_res/digimon_pomodoro_banner_low_res.webp",
+            "markdown": "digimon_pomodoro",
+            "technologies": [
+                {
+                    "name": "svelte-kit",
+                    "useCase": "Framework of choice"
+                },
+                {
+                    "name": "photopea",
+                    "useCase": "Ideation and prototyping"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Digimon-Pomodoro",
+                    "url": "https://vinicius-brito-costa.github.io/Digimon-Pomodoro/"
+                },
+                {
+                    "name": "Github",
+                    "url": "https://github.com/Vinicius-Brito-Costa/Digimon-Pomodoro"
+                }
+            ]
         }
     ],
     "meta": {
